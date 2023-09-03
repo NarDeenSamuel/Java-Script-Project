@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+  <link href="images/logo.png" rel="icon" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- L O A D I N G  -->
+
+  <section id="loading">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </section>
+
+  <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center ">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+  <!-- E N D L O A D I N G  -->
+
+
+  <!-- M E N U    L e F T -->
+  <section id="menu" class=" bg-black menu">
+    <div class=" d-flex ">
+      <div class="d-flex flex-column justify-content-between" id="menuItems">
+
+        <div class="div-a links ms-4 d-block" id="links">
+          <ol class="list-unstyled overflow-hidden">
+              <li class="py-2 position-relative " id="search">Search</li>
+              <li class="py-2 position-relative" id="categories" >Categories</li>
+              <li class="py-2 position-relative" id="area">Area</li>
+              <li class="py-2 position-relative " id="ingredients">Ingredients</li>
+              <li  class="py-2 position-relative " id="contact">Contact Us</li>
+          </ol>
+      </div>
+        <div class="p-4">
+
+          <div class="social-media-icons ">
+            <i class="fa-brands fa-facebook text-white "></i>
+            <i class="fa-brands fa-twitter text-white "></i>
+            <i class="fa-solid fa-globe text-white "></i>
+
+          </div>
+          <p class="text-white ">Copyright Â© 2019 All Rights<br>Reserved.</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="bg-white d-flex flex-column justify-content-between align-items-start logos p-2">
+        <div>
+          <img src="images/logo.png" alt="" class="logo">
+        </div>
+        <div class="d-flex flex-column open-close-icons">
+          <i class="fa-solid fa-x mb-2" id="close"></i>
+          <i class="fa-solid open-close-icon fa-2x fa-align-justify" id="open"></i>
+        </div>
+        <div class="d-flex flex-column small-icons p-3">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!--  E N D   M E N U    L e F T -->
+
+
+  <!-- M A I N   S E C T I O N  -->
+
+  <section id="index">
+    <div class="container">
+      <div class="row py-5 g-4 " id="rowData">
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--  E N D    M A I N   S E C T I O N  -->
+
+
+
+   <!-- C A T E G R Y   S E C T I O N  -->
+
+
+   <section id="categorySection">
+    <div class="container">
+      <div class="row py-5 g-4 " id="categoryData">
+
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- E N D    C A T E G R Y   S E C T I O N  -->
+
+  <!-- A R E A   S E C T I O N  -->
+
+
+  <section id="areaSection">
+    <div class="container">
+      <div class="row py-5 g-4 " id="areaData">
+
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- E N D    A R E A    S E C T I O N  -->
+
+
+   <!-- I N G R A D I N T S    S E C T I O N  -->
+
+
+   <section id="ingradiantSection">
+    <div class="container">
+      <div class="row py-5 g-4 " id="ingradiantData">
+
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- E N D    I N G R A D I N T S    S E C T I O N  -->
+
+
+  <!-- S E A R C H   S E C T I O N  -->
+  <div class="container w-75" id="searchContainer">
+    <div class="row py-4 ">
+      <div class="col-md-6 ">
+        <input onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" type="text"
+          placeholder="Search By Name">
+      </div>
+      <div class="col-md-6">
+        <input onkeyup="searchByFLetter(this.value)" maxlength="1" class="form-control bg-transparent text-white"
+          type="text" placeholder="Search By First Letter">
+      </div>
+    </div>
+    <div class="row py-5 g-4 " id="showData">
+
+    </div>
+  </div>
+  <!-- E N D    S E A R C H   S E C T I O N  -->
+  <!-- C O N T A C T    U S  -->
+
+
+  <div class="contactContent" id="contactContent">
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center flex-column">
+      <div class="row w-75 g-4">
+        <div class="col-md-6">
+          <input id="nameInput" onkeyup="inputsValidation()" type="text" class="form-control"
+            placeholder="Enter Your Name">
+          <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+            Special characters and numbers not allowed
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="emailInput" onkeyup="inputsValidation()" type="email" class="form-control"
+            placeholder="Enter Your Email">
+          <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+            Email not valid *exemple@yyy.zzz
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="phoneInput" onkeyup="inputsValidation()" type="number" class="form-control"
+            placeholder="Enter Your Phone">
+          <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+
+            Enter valid Phone Number
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="ageInput" onkeyup="inputsValidation()" type="number" class="form-control"
+            placeholder="Enter Your Age">
+          <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+
+            Enter valid age
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="passwordInput" onkeyup="inputsValidation()" type="password" class="form-control"
+            placeholder="Enter Your Password">
+          <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+
+            Enter valid password *Minimum eight characters, at least one letter and one number:*
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="repasswordInput" onkeyup="inputsValidation()" type="password" class="form-control"
+            placeholder="Repassword">
+          <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+            Enter valid repassword
+          </div>
+        </div>
+
+      </div>
+      <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit
+      </button>
+    </div>
+  </div>
+
+  <!-- E N D    C O N T A C T    U S  -->
+
+
+
+
+  <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
